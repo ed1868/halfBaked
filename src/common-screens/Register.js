@@ -37,7 +37,7 @@ export default class Register extends React.Component {
   };
 
   render() {
-    const { navigate } = this.props.navigation;
+    
     console.log("----------State of Registration ------", this.state);
     return (
       <ScrollView style={evoScrollContainer}>

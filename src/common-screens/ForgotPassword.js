@@ -1,8 +1,8 @@
 import React from 'react';
-import { View, StyleSheet, Text } from 'react-native';
-import { TextInput, Button } from 'react-native-paper';
+import { View, StyleSheet, Text, ScrollView } from 'react-native';
+import { TextInput, Button , } from 'react-native-paper';
 import Logo from './../components/Logo';
-import { evoInputDefault, evoBlankContainer } from './../styles/commonStyles';
+import { evoInputDefault, evoBlankContainer, evoScrollContainer } from './../styles/commonStyles';
 import colors from '../styles/colors';
 
 class ForgotPassword extends React.Component {
@@ -15,11 +15,18 @@ class ForgotPassword extends React.Component {
         email:''
     }
 
+
+    handlePasswordReset = () => {
+        console.log('--------PRESSED HANDLE PASSWORD RESET-------')
+        // TODO - MAKE SIGN UP LOGIC
+        
+        const { navigate } = this.props.navigation;
+        navigate("Home");
+      };
     render() {
 
-        const {navigate}=this.props.navigation;
-
         return (
+            <ScrollView style={evoScrollContainer}>
             <View style={evoBlankContainer}>
                 <Logo url={require("./../assets/logo.png")} />
                 <Text style={styles.forgetPwdTxt}>Please enter your registered email address</Text>
@@ -35,10 +42,11 @@ class ForgotPassword extends React.Component {
                     dark={true}
                     theme={{ colors: { primary: colors.primary } }}
                     style={styles.forgotBtn}
-                    onPress={() => navigate('Home')}>
+                    onPress={this.handlePasswordReset}>
                     Submit
                 </Button>
             </View>
+            </ScrollView>
         )
     }
 
@@ -52,7 +60,7 @@ const styles = StyleSheet.create({
     },
     forgetPwdTxt:{
         fontSize:16,
-        color:colors.subHeading,
+        color:colors.forgetPwdTxt,
         marginBottom:10
     }
     

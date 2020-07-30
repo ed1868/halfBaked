@@ -11,7 +11,8 @@ const colors = {
     success:'#60b246',
     backgroundC:'#f9f9f9',
     social: '#04e08f',
-    darkMode: '#000000'
+    darkMode: '#000000',
+    forgetPwdTxt:'#fff'
     // 04e08f
 }
 
