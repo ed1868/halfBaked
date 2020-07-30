@@ -34,14 +34,15 @@ const AuthStack = createStackNavigator({
     screen: Register,
     navigationOptions: {
       headerStyle: {
-        backgroundColor: colors.primary
+        backgroundColor: colors.darkMode
       },
       headerTitleStyle: {
-        color: 'white',
+        color: colors.primary,
         fontSize: 24,
-        minWidth: 200
+        minWidth: 200,
+        textAlign:'center'
       },
-      headerTintColor: 'white'
+      headerTintColor: colors.primary
     }
   },
   ForgotPassword: {
@@ -103,7 +104,8 @@ const AccountStack = createStackNavigator({
     headerTitleStyle: {
       color: 'white',
       fontSize: 24,
-      minWidth: 200
+      minWidth: 200,
+      
     },
     headerTintColor: 'white'
   })

@@ -20,15 +20,26 @@ export const evoContainer = {
     justifyContent: 'center',
     alignItems: 'center',
     flexDirection: 'column',
-    height: '100%',
+    height: '100%'
 }
 
 export const evoBlankContainer = {
     ...evoContainer,
-    backgroundColor: '52b788',
+    // backgroundColor: '52b788',
+    backgroundColor: colors.darkMode,
     padding: 25
 }
 
+export const evoRegisterContainer = {
+    
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    flexDirection: 'column',
+    height: '100%',
+    backgroundColor: colors.darkMode,
+    padding: 25
+}
 export const evoScrollContainer = {
     flex: 1,
     height: '100%',

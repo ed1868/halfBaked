@@ -43,7 +43,8 @@ class LoginScreen extends React.Component {
                     />
 
                     <Button mode="contained"
-                        dark={true}
+                        dark={false}
+                        
                         theme={{ colors: { primary: colors.primary } }}
                         style={styles.loginBtn}
                         onPress={() => navigate('Home')}>
@@ -51,6 +52,7 @@ class LoginScreen extends React.Component {
                     </Button>
 
                     <Button mode="outlined"
+
                         theme={{ colors: { primary: colors.primary } }}
                         style={styles.loginBtn}
                         onPress={() => navigate('Register')}>
@@ -64,7 +66,7 @@ class LoginScreen extends React.Component {
                     <Text style={styles.plainLbl}>Sign In With</Text>
                     <View style={styles.socialMediaWrapper}>
                         <Button mode="contained"
-                            dark={true}
+                            dark={false}
                             theme={{ colors: { primary:  colors.social } }}
                             style={styles.socialMedia}
                             icon="google"
@@ -72,7 +74,7 @@ class LoginScreen extends React.Component {
                             Google
                     </Button>
                         <Button mode="contained"
-                            dark={true}
+                            dark={false}
                             theme={{ colors: { primary: colors.social } }}
                             style={styles.socialMedia}
                             icon="facebook"
@@ -100,6 +102,7 @@ const styles = StyleSheet.create({
         width: '100%',
         padding: 5,
         marginTop: 15
+        
     },
     socialMediaWrapper: {
         width: '100%'
