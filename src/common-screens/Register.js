@@ -9,7 +9,7 @@ import {
   evoRegisterContainer,
 } from "./../styles/commonStyles";
 import SegmentedControlTab from "react-native-segmented-control-tab";
-
+import DatePicker from "react-native-datepicker";
 import colors from "../styles/colors";
 
 export default class Register extends React.Component {
@@ -19,6 +19,7 @@ export default class Register extends React.Component {
     password: "",
     confirmPwd: "",
     selectedIndex: 0,
+    date: "",
   };
 
   handleIndexChange = (index) => {
@@ -29,12 +30,11 @@ export default class Register extends React.Component {
   };
 
   handleSignUp = () => {
+    // TODO - MAKE SIGN UP LOGIC
 
-    // TODO - MAKE SIGN UP LOGIC 
-    
     const { navigate } = this.props.navigation;
-    navigate("Home")
-  }
+    navigate("Home");
+  };
 
   render() {
     const { navigate } = this.props.navigation;
@@ -77,15 +77,32 @@ export default class Register extends React.Component {
             theme={{ colors: { primary: colors.primary } }}
             onChangeText={(confirmPwd) => this.setState({ confirmPwd })}
           />
+
+<DatePicker
+            
+            style={evoInputDefault}
+            date={this.state.date}
+            mode="date"
+            showIcon={false}
+            placeholder="Date of Birth"
+            format="YYYY-MM-DD"
+            minDate="2016-05-01"
+            maxDate="2016-06-01"
+            confirmBtnText="Confirm"
+            cancelBtnText="Cancel"
+            onDateChange={(date) => {
+              this.setState({ date: date });
+            }}
+          />
           <SegmentedControlTab
-          
             tabStyle={styles.tabStyle}
             activeTabStyle={styles.activeTabStyle}
-            tabTextStyle = {styles.tabTextStyle}
+            tabTextStyle={styles.tabTextStyle}
             values={["Consumer", "Driver"]}
             selectedIndex={this.state.selectedIndex}
             onTabPress={this.handleIndexChange}
           />
+
           <Button
             mode="contained"
             dark={true}
@@ -115,14 +132,16 @@ const styles = StyleSheet.create({
 
   tabStyle: {
     borderColor: colors.primary,
-    marginTop:15
+    marginTop: 15,
   },
   activeTabStyle: {
     backgroundColor: colors.primary,
   },
   tabTextStyle: {
     color: colors.darkMode,
-    
   },
- 
+
+
+
+
 });

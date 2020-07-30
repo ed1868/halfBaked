@@ -6,6 +6,7 @@ const Logo = ({ url }) => {
     return (
         <View style={styles.logoWrapper}>
             <Text style={styles.logoTxt}>HalfBaked</Text>
+            {/* <Text style={styles.amigoTxt}>Amigos y Amigos</Text> */}
             <Image source={url} style={styles.logo} />            
         </View>
     );
@@ -29,6 +30,12 @@ const styles = StyleSheet.create({
     },
     logoTxt:{
         fontSize:64,
+        fontFamily:'Lobster-Regular',
+        color:colors.primary,
+    }
+    ,
+    amigoTxt:{
+        fontSize:46,
         fontFamily:'Lobster-Regular',
         color:colors.primary,
     }
