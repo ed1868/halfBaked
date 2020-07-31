@@ -9,10 +9,11 @@ class SearchBar extends React.Component {
     };
 
     render() {
+        console.log(`------SEARCH BAR STATE-------- ${this.state.firstQuery}`)
         return (
             <View style={styles.searchWrapper}>
                 <Searchbar
-                    placeholder="Search for restraunts"
+                    placeholder="Where is the plug?"
                     onChangeText={query => { this.setState({ firstQuery: query }); }}
                     style={styles.searchBar}
                     value={this.state.firstQuery}

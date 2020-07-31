@@ -33,7 +33,7 @@ class OfferCardCarousel extends React.Component {
                                     style={styles.orderBtn}
                                     small
                                     label="Order"
-                                    color="white"
+                                    color="#023870"
                                     onPress={() => console.log('Pressed')} />
                             </View>
                         })
@@ -47,6 +47,7 @@ class OfferCardCarousel extends React.Component {
 
 const styles = StyleSheet.create({
     offerHeading: {
+        color: colors.secondary,
         fontSize: 28,
         fontFamily: 'Lobster-Regular'
     },
@@ -56,7 +57,8 @@ const styles = StyleSheet.create({
         fontSize:14,
         height:35,
         padding:0,
-        justifyContent:'center'
+        justifyContent:'center',
+        
     },
     cardWrapper: {
         flexDirection: 'column',
@@ -65,13 +67,13 @@ const styles = StyleSheet.create({
     cardLabel: {    
         fontSize:20,
         fontFamily:'OpenSans-Regular',
-        color:colors.heading,
+        color:colors.primary,
         fontWeight:'bold'
     },
     cardDescription: {
         fontSize:14,
         fontFamily:'OpenSans-Regular',
-        color:colors.subHeading,
+        color:colors.secondary,
         marginBottom:5
     },
     offerCard: {
