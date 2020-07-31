@@ -1,14 +1,14 @@
 import React from 'react';
 import { ScrollView, Image, StyleSheet, Text, Dimensions, TouchableOpacity } from 'react-native';
-import iconCarousel from './../constants/iconCarousel';
+import iconCarousel from '../constants/iconCarousel';
 import colors from '../styles/colors';
 
 const { width } = Dimensions.get('window');
-class CuisineCarousel extends React.Component {
+class ProductCarousel extends React.Component {
     render() {
         return (
             <React.Fragment>
-                <Text style={styles.cuisineHeader}>Select From Cuisine</Text>
+                <Text style={styles.cuisineHeader}>Select by Products</Text>
                 <ScrollView
                     ref={(scrollView) => { this.scrollView = scrollView; }}
                     horizontal={true}
@@ -65,4 +65,4 @@ const styles = StyleSheet.create({
     },
 });
 
-export default CuisineCarousel;
+export default ProductCarousel;

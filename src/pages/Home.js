@@ -6,7 +6,7 @@ import SmallCardCarousel from './../components/SmallCardCarousel';
 import RestaurantDetail from './../components/RestaurantDetail';
 import SearchBar from './../components/SearchBar';
 import OfferCardCarousel from './../components/OfferCardCarousel';
-import CuisineCarousel from './../components/CuisineCarousel';
+import ProductCarousel from '../components/ProductCarousel';
 
 import imageCarousel from './../constants/imageCarousel'
 import details from './../constants/restrauntDetailList';
@@ -25,7 +25,7 @@ class Home extends React.Component {
             <ScrollView style={styles.homeWrapper}>
                 <SearchBar />
                 <OfferCardCarousel />
-                <CuisineCarousel />
+                <ProductCarousel />
                 <View>
                     <Text style={styles.stdHeading}>Restraunts Near You</Text>
                     {
