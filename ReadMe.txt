@@ -18,7 +18,7 @@ HalfBaked is an online Pot delivery system for Weed shops and Consumers
 Setup Details :
 
 Note : 
-This project is a template and not a full fledge solution for a delivery app.
+This project is not a full fledge solution for a delivery app.
 We also provide solutions for web, if you want a website to be designed you can reach out to us at ainomadsmiami@gmail.com
 
 
