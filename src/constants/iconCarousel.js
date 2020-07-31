@@ -1,30 +1,30 @@
 const iconCarousel=[
     {
-        title:'Burgers',
+        title:'Flower',
         url:require('./../assets/icons/foodIcon1.png')
     },
     {
-        title:'Pizza',
+        title:'Extracts',
         url:require('./../assets/icons/foodIcon2.png')
     },
     {
-        title:'Chinese',
+        title:'Edibles',
         url:require('./../assets/icons/foodIcon3.png')
     },
     {
-        title:'Desserts',
+        title:'CBD',
         url:require('./../assets/icons/foodIcon4.png')
     },
     {
-        title:'Shakes',
+        title:'Beer Infusions',
         url:require('./../assets/icons/foodIcon5.png')
     },
     {
-        title:'Salad',
+        title:'Equipment',
         url:require('./../assets/icons/foodIcon6.png')
     },
     {
-        title:'Mexican',
+        title:'Merch',
         url:require('./../assets/icons/foodIcon7.png')
     },
 ];
