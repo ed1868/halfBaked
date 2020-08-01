@@ -13,8 +13,14 @@ class RestrauntMenuItem extends React.Component {
     }
 
     componentDidMount(){
+
+console.log('ahhhhhhh',this.props)
+        
+
+    
         AsyncStorage.getAllKeys().then(
             response => {
+
                 let temp=[];
                 let tempItem=[];
                 AsyncStorage.multiGet(response).then((itemList)=>{
@@ -39,6 +45,9 @@ class RestrauntMenuItem extends React.Component {
     handleCartAdd = (item, qty) => {
         this.props.handleCart(item, qty);
     }
+
+
+ 
 
     render() {
         return (
@@ -102,7 +111,7 @@ const styles = StyleSheet.create({
         fontWeight:'bold',
         textTransform: 'uppercase',
         width:'100%',
-        flexBasis:'25%',
+        flexBasis:'70%',
         marginLeft:10
     },
     menuItem: {

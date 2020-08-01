@@ -1,37 +1,37 @@
 const iconCarousel=[
     {
         title:'Flower',
-        url:require('./../assets/icons/foodIcon1.png'),
+        url:require('./../assets/icons/flower.jpg'),
         sellerUrl:''
     },
     {
         title:'Extracts',
-        url:require('./../assets/icons/foodIcon2.png'),
+        url:require('./../assets/icons/concentrate.jpg'),
         sellerUrl:''
     },
     {
         title:'Edibles',
-        url:require('./../assets/icons/foodIcon3.png'),
+        url:require('./../assets/icons/edibles.jpg'),
         sellerUrl:''
     },
     {
         title:'CBD',
-        url:require('./../assets/icons/foodIcon4.png'),
+        url:require('./../assets/icons/cbd.jpg'),
         sellerUrl:''
     },
     {
         title:'Beer Infusions',
-        url:require('./../assets/icons/foodIcon5.png'),
+        url:require('./../assets/icons/beer.jpg'),
         sellerUrl:''
     },
     {
         title:'Equipment',
-        url:require('./../assets/icons/foodIcon6.png'),
+        url:require('./../assets/icons/equip.jpg'),
         sellerUrl:''
     },
     {
         title:'Merch',
-        url:require('./../assets/icons/foodIcon7.png'),
+        url:require('./../assets/icons/app.jpg'),
         sellerUrl:''
     },
 ];

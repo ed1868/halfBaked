@@ -3,12 +3,15 @@ import { View, Text, StyleSheet, Image,TouchableOpacity } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import colors from './../styles/colors';
 
-const RestaurantDetail = ({ restrauntData,selectedRes }) => {
+const RestaurantDetail = ({ restrauntData,selectedRes, picker }) => {
 
-    console.log(`THIS IS THE DISPESARY DATA -------${Object.keys(restrauntData)} -------- ${Object.values(restrauntData)}`);
+    
     
     return (
-        <TouchableOpacity style={styles.rdWrapper}  onPress={() => selectedRes('Restraunt')}>
+        <TouchableOpacity style={styles.rdWrapper}  onPress={() => {
+            
+        selectedRes("Restraunt")}
+        }>
             <View style={styles.rImg}>
                 <Image source={restrauntData.src} style={{height:120,width:'100%'}} />
             </View>

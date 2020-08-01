@@ -14,12 +14,18 @@ import dispensaries from '../constants/dispensariesList';
 class Home extends React.Component {
 
     state = {
-        firstQuery: ''
+        firstQuery: '',
+        
     }
+
+
 
     render() {
 
+            // console.log('---D-FDSFDS-FDS-FDS-F------',this.props)
         const { navigate } = this.props.navigation;
+        
+
 
         return (
             <ScrollView style={styles.homeWrapper}>
@@ -32,11 +38,21 @@ class Home extends React.Component {
                     {/* TO DO - MAKE LOGIC TO GET USER LOCATION AND GET THE NEAREST DISPESARIES */}
                     {
                         dispensaries.map((detail, index) => {
+                        
                             return (
                                 <RestaurantDetail key={`res-details-${index}`}
                                     restrauntData={detail}
+                                    
                                     currentCartState={cart => console.log("Blake--", cart)}
-                                    selectedRes={(routeName) => navigate(routeName)} />
+                                    // selectedRes={(routeName) => navigate(routeName)} />
+                                    selectedRes={(routeName) => {
+                                        console.log('------SELECTED RESSS------', detail)
+                        
+                                     
+                                        navigate(routeName,{pickedId: detail.id})
+                                    
+                                    
+                                    }} />
                             )
                         })
                     }

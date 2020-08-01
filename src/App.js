@@ -19,7 +19,7 @@ import Restraunt from './pages/Restraunt';
 import Cart from './pages/Cart';
 import CheckOut from './pages/CheckOut';
 import OrderSucessful from './pages/OrderSuccessful';
-
+import DispensaryList from './constants/dispensariesList';
 //Custom Components
 import IconWithBadge from './components/IconWithBadge';
 
@@ -68,6 +68,8 @@ const HomeStack = createStackNavigator({
   },
   Restraunt: {
     screen: Restraunt,
+    params: '',
+    detailId: '',
     navigationOptions: ({ navigation }) => ({
       headerShown: false
     })

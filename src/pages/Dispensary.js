@@ -5,38 +5,21 @@ import RestrauntTile from './../components/RestrauntTile'
 import RestrauntMenuItem from './../components/RestrauntMenuItem';
 import colors from '../styles/colors';
 import restrauntInfo from './../constants/restrauntInfo';
-import Dispesaries from '../constants/dispensariesList'
 
-class Restraunt extends React.Component {
+class Dispensary extends React.Component {
 
     state = {
         vegOnly: false,
         addToCart: false,
         qtyCard: '',
-        allItems: [],
-        storeInfo: []
+        allItems: []
     }
     
     componentDidMount(){
-       
         
-        let storeIdPicked = this.props.navigation.state.params.pickedId;
-
-        Dispesaries.map(store => {
-            if(store.id ==  storeIdPicked){
-        
-
-                this.setState({storeInfo: store})
-                
-            }
-            else{
-                console.log('NAH')
-            }
-        })
     }
 
 
-    
 
 
     updateCartState = (totalQuantity, totalPrice, allItems) => {
@@ -96,16 +79,14 @@ class Restraunt extends React.Component {
     }
 
     render() {
-        console.log("-----PINGa-----", this.state.storeInfo)
 
-const payload =  this.state.storeInfo.titleInfo
         const { navigate } = this.props.navigation;
         return (
             <View style={{ flex: 1 }}>
                 <ScrollView style={styles.restrauntWrapper}>
-                    <RestrauntTile dispesaryHeaders={payload} tileData={restrauntInfo.tileInfo} navigation={this.props.navigation} />
+                    <RestrauntTile tileData={restrauntInfo.tileInfo} navigation={this.props.navigation} />
                     <View>
-                        <RestrauntMenuItem handleCart={(item, qty) => {
+                        <RestrauntMenuItem  handleCart={(item, qty) => {
                             this.handleCart(item, qty);
                         }} />
                     </View>
@@ -169,4 +150,4 @@ const styles = StyleSheet.create({
     }
 })
 
-export default Restraunt;
+export default Dispensary;
