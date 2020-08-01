@@ -5,6 +5,17 @@ import colors from '../styles/colors';
 
 const { width } = Dimensions.get('window');
 class ProductCarousel extends React.Component {
+
+
+
+    handleProductSelection = () => {
+        // TODO - Make SELECTED PRODUCT LOGIC
+        console.log("----------HANDLING SELECTED PRODUCT SELECTION ---------");
+        const { navigate } = this.props.navigation;
+        navigate("Home");
+      };
+
+
     render() {
         return (
             <React.Fragment>
@@ -23,7 +34,7 @@ class ProductCarousel extends React.Component {
                     }}>
                     {
                         iconCarousel.map((iconItem,index) => {
-                            return <TouchableOpacity key={`cusine-row-${index}`} style={styles.cuisineItem} onPress={() => console.log("PRessed")}>
+                            return <TouchableOpacity key={`cusine-row-${index}`} style={styles.cuisineItem} onPress={this.handleProductSelection}>
                                 <Image source={iconItem.url} style={styles.boxWithShadow} />
                                 <Text style={styles.cuisineCardTxt}>{iconItem.title}</Text>
                             </TouchableOpacity>

@@ -4,6 +4,9 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 import colors from './../styles/colors';
 
 const RestaurantDetail = ({ restrauntData,selectedRes }) => {
+
+    console.log(`THIS IS THE DISPESARY DATA -------${Object.keys(restrauntData)} -------- ${Object.values(restrauntData)}`);
+    
     return (
         <TouchableOpacity style={styles.rdWrapper}  onPress={() => selectedRes('Restraunt')}>
             <View style={styles.rImg}>
@@ -13,7 +16,7 @@ const RestaurantDetail = ({ restrauntData,selectedRes }) => {
                 <View>
                     <Text style={styles.rHeading}>{restrauntData.heading}</Text>
                     <Text style={styles.rSubHeading}>{restrauntData.subHeading}</Text>
-                    <Text style={styles.rOffers}>{restrauntData.offer} OFF | USE CODE TASTY</Text>
+                    <Text style={styles.rOffers}>{restrauntData.offer} OFF | USE CODE HWEK</Text>
                 </View>
                 <View style={styles.ratings}>
                     <Text style={styles.ratingText}><Icon name="star" size={12} color={colors.subHeading} /> {restrauntData.ratings}</Text>
@@ -36,7 +39,8 @@ const styles = StyleSheet.create({
         flex: 1,
         display:'flex',
         alignItems:'flex-start',
-        maxHeight:120
+        maxHeight:120,
+        width: 4
     },
     rDetails: {
         flex: 2,

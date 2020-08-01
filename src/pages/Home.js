@@ -9,7 +9,7 @@ import OfferCardCarousel from './../components/OfferCardCarousel';
 import ProductCarousel from '../components/ProductCarousel';
 
 import imageCarousel from './../constants/imageCarousel'
-import details from './../constants/restrauntDetailList';
+import dispensaries from '../constants/dispensariesList';
 
 class Home extends React.Component {
 
@@ -25,11 +25,13 @@ class Home extends React.Component {
             <ScrollView style={styles.homeWrapper}>
                 <SearchBar />
                 <OfferCardCarousel />
+                {/* TO DO - MAKE ICONS FOR PRODUCT CAROUSEL */}
                 <ProductCarousel />
                 <View>
-                    <Text style={styles.stdHeading}>Restraunts Near You</Text>
+                    <Text style={styles.stdHeading}>Dispensaries Near You</Text>
+                    {/* TO DO - MAKE LOGIC TO GET USER LOCATION AND GET THE NEAREST DISPESARIES */}
                     {
-                        details.map((detail, index) => {
+                        dispensaries.map((detail, index) => {
                             return (
                                 <RestaurantDetail key={`res-details-${index}`}
                                     restrauntData={detail}
