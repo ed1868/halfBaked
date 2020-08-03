@@ -24,7 +24,7 @@ const dispensaries = [
           imgIcon: require("./../assets/icons/clock.png"),
         },
         {
-          value: "$400",
+          value: "$420",
           description: "For Two",
           imgIcon: require("./../assets/icons/payment.png"),
         },

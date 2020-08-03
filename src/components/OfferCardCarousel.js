@@ -49,7 +49,9 @@ const styles = StyleSheet.create({
     offerHeading: {
         color: colors.secondary,
         fontSize: 28,
-        fontFamily: 'Lobster-Regular'
+        fontFamily:'OpenSans-Regular',
+        fontWeight: "bold"
+        // fontFamily: 'Lobster-Regular'
     },
     orderBtn:{
         backgroundColor:colors.primary,

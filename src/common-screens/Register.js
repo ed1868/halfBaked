@@ -38,11 +38,11 @@ export default class Register extends React.Component {
 
   render() {
     
-    console.log("----------State of Registration ------", this.state);
+    
     return (
       <ScrollView style={evoScrollContainer}>
         <View style={evoRegisterContainer}>
-          <Logo url={require("./../assets/logo.png")} />
+          <Logo url={require("./../assets/icons/flower.jpg")} />
           <TextInput
             mode={"outlined"}
             label="Full name"

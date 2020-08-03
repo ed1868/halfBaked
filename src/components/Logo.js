@@ -22,8 +22,8 @@ const styles = StyleSheet.create({
         flexDirection:'row'
     },
     logo: {
-        width: 30,
-        height: 30,
+        width: 35,
+        height: 35,
         position:'absolute',
         right:40,
         top:0

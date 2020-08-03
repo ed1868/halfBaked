@@ -4,7 +4,7 @@ import { Switch } from 'react-native-paper';
 import AddButton from './../components/AddButton';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import colors from '../styles/colors';
-import restrauntMenuItem from './../constants/restrauntMenuItem';
+import dispesaryMenuItems from './../constants/restrauntMenuItem';
 
 class RestrauntMenuItem extends React.Component {
 
@@ -54,7 +54,7 @@ console.log('ahhhhhhh',this.props)
             <View style={{ flex: 1 }}>
                 <View style={styles.vegOnlyWrapper}>
                             <Icon name={'leaf'} size={20} color={colors.success} style={{flexBasis:'5%'}} />
-                            <Text style={styles.vegText}>Veg Only</Text>
+                            <Text style={styles.vegText}>Flower Only</Text>
                             <Switch
                                 value={this.state.vegOnly}
                                 color={colors.success}
@@ -67,7 +67,7 @@ console.log('ahhhhhhh',this.props)
                         </View>
                 <View style={styles.menuItemWrapper}>
                     {
-                        restrauntMenuItem.map((item,index) => {
+                        dispesaryMenuItems.map((item,index) => {
                             let initialVal=this.state.currentInitialVal.filter(v=> v.id ===item.id);
                             return <View style={styles.menuItem} key={`restraunt-menu-item-${index}`}>
                                 <Image source={item.image} resizeMode='contain' style={styles.foodImg} />

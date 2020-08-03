@@ -15,8 +15,8 @@ const restrauntInfo={
                 imgIcon:require('./../assets/icons/clock.png')
             },
             {
-                value:'$400',
-                description:"For Two",
+                value:'$420',
+                description:"Ounce",
                 imgIcon:require('./../assets/icons/payment.png')
             }
         ],

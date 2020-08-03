@@ -37,7 +37,7 @@ export const evoRegisterContainer = {
     alignItems: 'center',
     flexDirection: 'column',
     height: '100%',
-    backgroundColor: colors.darkMode,
+    backgroundColor: colors.whiteBack,
     padding: 25
 }
 export const evoScrollContainer = {

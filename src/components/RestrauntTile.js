@@ -74,9 +74,11 @@ const styles = StyleSheet.create({
         height: 372 * ratio,
     },
     tileName: {
-        fontFamily: 'Lobster-Regular',
+        // fontFamily: 'Lobster-Regular',
+        fontFamily: 'OpenSans-Regular',
         fontSize: 26,
-        color: colors.primary
+        color: colors.secondary,
+        fontWeight: "bold"
     },
     tileAddress: {
         color: colors.secondary,

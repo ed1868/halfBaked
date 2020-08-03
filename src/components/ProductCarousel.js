@@ -50,7 +50,10 @@ class ProductCarousel extends React.Component {
 const styles = StyleSheet.create({
     cuisineHeader: {
         fontSize: 24,
-        fontFamily: 'Lobster-Regular'
+        // fontFamily: 'Lobster-Regular'
+        fontFamily:'OpenSans-Regular',
+        fontWeight: "bold",
+        color: colors.secondary
     },
     cuisineItem: {
         marginBottom: 20,

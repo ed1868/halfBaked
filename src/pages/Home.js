@@ -11,6 +11,8 @@ import ProductCarousel from '../components/ProductCarousel';
 import imageCarousel from './../constants/imageCarousel'
 import dispensaries from '../constants/dispensariesList';
 
+import colors from '../styles/colors';
+
 class Home extends React.Component {
 
     state = {
@@ -71,8 +73,10 @@ const styles = StyleSheet.create({
     },
     stdHeading: {
         fontSize: 24,
-        fontFamily: 'Lobster-Regular',
-        marginBottom: 5
+        // fontFamily: 'Lobster-Regular',
+        fontFamily: 'OpenSans-Regular',
+        marginBottom: 5,
+        color: colors.secondary
     }
 })
 
