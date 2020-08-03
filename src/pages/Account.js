@@ -11,7 +11,7 @@ const Account = (props) => {
     return (
         <ScrollView style={{...evoScrollContainer,...{minHeight:500,height:'100%'}}}>
             <View style={styles.accHero}>
-                <Image style={styles.accImg} source={require('./../assets/user1.jpg')} />
+                <Image style={styles.accImg} source={require('./../assets/user2.jpg')} />
                 <Text style={styles.compStatus}>Your profile is 80% completed.</Text>
                 <Button icon="pencil" mode="text"
                     theme={{ colors: { primary: colors.heading } }}

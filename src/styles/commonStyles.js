@@ -26,7 +26,7 @@ export const evoContainer = {
 export const evoBlankContainer = {
     ...evoContainer,
     // backgroundColor: '52b788',
-    backgroundColor: colors.darkMode,
+    backgroundColor: colors.whiteBack,
     padding: 25
 }
 
@@ -43,13 +43,14 @@ export const evoRegisterContainer = {
 export const evoScrollContainer = {
     flex: 1,
     height: '100%',
-    backgroundColor: '#000000'
+    backgroundColor: '#fff'
 }
 
 export const evoCommonHeading = {
     fontFamily: 'Lobster-Regular',
     fontSize: 26,
     color: colors.primary,
+    
     marginBottom: 10
 }
 

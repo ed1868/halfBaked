@@ -13,7 +13,7 @@ class RestrauntTile extends React.Component {
         return (
             <View style={{ height: 350 }}>
                 <Image style={styles.tileImg}
-                    source={require('./../assets/restraunt/res6.jpg')} />
+                    source={require('../assets/dispesaryImgs/dab.jpg')} />
                 <IconButton
                     icon="arrow-left"
                     color={'#fff'}

@@ -22,7 +22,7 @@ class LoginScreen extends React.Component {
         return (
             <ScrollView style={evoScrollContainer}>
                 <View style={evoBlankContainer}>
-                    <Logo url={require("./../assets/logo.png")} />
+                    <Logo url={require("./../assets/icons/flower.jpg")} />
                     <TextInput
                         mode={'outlined'}
                         label='Username'

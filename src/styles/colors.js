@@ -13,7 +13,8 @@ const colors = {
     backgroundC:'#f9f9f9',
     social: '#04e08f',
     darkMode: '#000000',
-    forgetPwdTxt:'#fff'
+    forgetPwdTxt:'#fff',
+    whiteBack:"#fff"
     // 04e08f
 }
 

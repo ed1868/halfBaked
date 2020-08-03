@@ -1,8 +1,8 @@
 const restrauntInfo={
     tileInfo:{
-        heading:'Pizza Mania',
-        subHeading:'Pizza, Italian, Pasta',
-        address:'Soho, London',
+        heading:'The Green Alchemist',
+        subHeading:'Kush Daddy Purp',
+        address:'Denver, Colorado',
         ratingInfo:[
             {
                 value:'4.1/5',

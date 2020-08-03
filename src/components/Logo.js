@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
     },
     logoTxt:{
         fontSize:64,
-        fontFamily:'Lobster-Regular',
+        fontFamily:'OpenSans-light',
         color:colors.primary,
     }
     ,

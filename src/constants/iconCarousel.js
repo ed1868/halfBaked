@@ -20,7 +20,7 @@ const iconCarousel=[
         sellerUrl:''
     },
     {
-        title:'Beer Infusions',
+        title:'Drinks',
         url:require('./../assets/icons/beer.jpg'),
         sellerUrl:''
     },
