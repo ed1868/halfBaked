@@ -40,8 +40,9 @@ const CartTotal = ({ navigation, subtotal, cWidth }) => {
                     <Text style={styles.totalLbl}>{formatMoney(total)}</Text>
                 </View>
                 <Button mode="contained"
-                    dark={true}
-                    theme={{ colors: { primary: colors.success } }}
+                    dark={false}
+                    // theme={{ colors: { primary: colors.success } }}
+                    theme={{ colors: {primary: colors.primary }}}
                     style={styles.proceedPay}
                     onPress={() => navigate('CheckOut',{
                         totalAmt:formatMoney(total)
