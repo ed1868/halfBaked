@@ -14,14 +14,14 @@ const Account = (props) => {
                 <Image style={styles.accImg} source={require('./../assets/user2.jpg')} />
                 <Text style={styles.compStatus}>Your profile is 80% completed.</Text>
                 <Button icon="pencil" mode="text"
-                    theme={{ colors: { primary: colors.heading } }}
+                    theme={{ colors: { primary: colors.secondary } }}
                     onPress={() => navigate('Profile')}>
                     Edit Profile
                 </Button>
             </View>
             <MenuList menuData={menuList} navigation={props.navigation} />
             <Button style={styles.logoutBtn} icon="power" mode="outlined"
-                theme={{ colors: { primary: colors.primary } }}
+                theme={{ colors: { primary: colors.secondary } }}
                 onPress={() => { navigate('Login') }}>Log Out</Button>
         </ScrollView>
     )
@@ -52,7 +52,7 @@ const styles = StyleSheet.create({
         height: 185,
         width: 185,
         borderWidth: 5,
-        borderColor: colors.primary,
+        borderColor: colors.secondary,
         borderRadius: 100,
         transform: [{ scale: 0.8 }]
     },

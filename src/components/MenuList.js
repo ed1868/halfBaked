@@ -47,6 +47,7 @@ const styles = StyleSheet.create({
     menuText: {
         paddingLeft: 20,
         fontSize: 20,
+        color: '#023870'
     }
 })
 
