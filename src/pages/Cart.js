@@ -56,7 +56,7 @@ class Cart extends React.Component {
                 {
                     this.state.cartContent.length == 0 ?
                         <EmptyCart pic={require('./../assets/icons/cooking.png')}
-                            label={'Good food is always cooking.'}
+                            label={'Good Weed is Always Growing and Cooking.'}
                             labelSecond={'Hurry, Order something !!'} /> : <View>
                             {
                                 this.state.cartContent.map((cartItem, index) => {

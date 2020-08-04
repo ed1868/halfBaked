@@ -16,10 +16,10 @@ const CartTotal = ({ navigation, subtotal, cWidth }) => {
     return (
         <React.Fragment>
             <Card style={{ ...styles.addressWrapper, ...{ width: cWidth } }} elevation={5}>
-                <Text style={styles.addressLbl}>F8, 1001, Magarpatta Annexe, Pune, Maharashtra</Text>
+                <Text style={styles.addressLbl}>1800 North Bayshore Dr Miami, Fl 33138</Text>
                 <View style={{flexDirection:'row'}}>
                     <Text style={{ ...styles.addressLbl, ...{ alignSelf: 'flex-end' } }}><Icon name="check-circle" size={22} color={colors.success} /> Delivery Address</Text>
-                    <Text style={{ ...styles.addressLbl, ...{ alignSelf: 'flex-start' } }}><Icon name="edit" size={22} color={colors.success} /> Edit Address</Text>
+                    <Text onPress={() => console.log('REMINDER TO ADD THE EDIT ADDRESS FUNCTIONALITY AND FRONT END')} style={{ ...styles.addressLbl, ...{ alignSelf: 'flex-start' } }}><Icon name="edit" size={22} color={colors.success} /> Edit Address</Text>
                 </View>
             </Card>
             <Card style={{ ...styles.cartPaymentWrapper, ...{ width: cWidth } }} elevation={5}>

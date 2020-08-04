@@ -130,6 +130,7 @@ const CartStack = createStackNavigator({
     headerTitleStyle: {
       color: 'white',
       fontSize: 24,
+      textAlign: 'center',
       minWidth: 200
     },
     headerTintColor: 'white'
