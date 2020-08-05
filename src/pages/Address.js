@@ -41,7 +41,7 @@ const Address = (props) => {
             }
             <Button mode="contained"
                 dark={true}
-                theme={{ colors: { primary: colors.success } }}
+                theme={{ colors: { primary: colors.primary } }}
                 style={styles.newAddBtn}
                 onPress={()=>console.log("Add new address")}>
                 Add New Address
@@ -74,11 +74,13 @@ const styles = StyleSheet.create({
     titleTxt: {
         fontSize: 16,
         fontFamily: 'OpenSans-Regular',
+        color: colors.secondary,
         fontWeight: 'bold'
     },
     newAddBtn:{
         margin:15,
-        padding:10
+        padding:10,
+        
     }
 });
 

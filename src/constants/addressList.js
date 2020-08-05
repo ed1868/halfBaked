@@ -2,17 +2,17 @@ const addressList=[
     {
         name:'Home',
         icon:'home',
-        add:'96, Megapolis Sparklet,Hinjewadi,Pune'
+        add:'1800 North Bayshore Dr, Miami Fl, 33138'
     },
     {
         name:'Work',
         icon:'briefcase',
-        add:'F 1001, Magarpatta,Pune'
+        add:'814 Ponce De Leon Blvd, Coral Gables Fl, 33134'
     },
     {
-        name:'Other',
+        name:'AI Nomads',
         icon:'map-marker',
-        add:'A4 301, Green Valley, Wanowrie,Pune'
+        add:'777 NE 63rd ST, Miami Fl, 33138'
     }
 ];
 

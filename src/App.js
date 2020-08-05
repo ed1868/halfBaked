@@ -86,7 +86,13 @@ const AccountStack = createStackNavigator({
   Address: {
     screen: Address,
     navigationOptions: ({ navigation }) => ({
-      headerTitle: 'Manage Address'
+      headerTitle: 'Edit Address',
+      headerTitleStyle: {
+        color: 'white',
+        textAlign: 'center',
+        fontWeight: 'bold',
+        fontSize: 20,
+      }
     })
   },
   Profile: {
