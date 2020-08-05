@@ -1,4 +1,4 @@
-qHalfBaked by Eddie Ruiz, Powered by AI Nomads.
+HalfBaked by Eddie Ruiz, Powered by AI Nomads.
 
 
 This document details the contents of this project and installation steps for you to easily install & get the system running.
