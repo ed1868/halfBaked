@@ -47,11 +47,12 @@ export const evoScrollContainer = {
 }
 
 export const evoCommonHeading = {
-    fontFamily: 'Lobster-Regular',
+    // fontFamily: 'Lobster-Regular',
+    fontFamily: 'OpenSans-Light',
     fontSize: 26,
     color: colors.primary,
-    
-    marginBottom: 10
+    marginBottom: 10,
+    fontWeight: 'bold'
 }
 
 export const evoDefaultBtn = {

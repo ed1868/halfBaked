@@ -35,7 +35,7 @@ class Profile extends React.Component {
                     dark={true}
                     theme={{ colors: { primary: colors.primary } }}
                     style={evoDefaultBtn}
-                    onPress={() => console.log("test")}>
+                    onPress={() => console.log("REMEMBER TO DO THE USER PROFILE UPDATE LOGIC")}>
                     Update
                 </Button>
             </View>

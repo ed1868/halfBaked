@@ -92,7 +92,11 @@ const AccountStack = createStackNavigator({
   Profile: {
     screen: Profile,
     navigationOptions: ({ navigation }) => ({
-      headerTitle: 'Edit Profile'
+      headerTitle: 'Edit Profile',
+      headerTitleStyle:{
+        color: 'white',
+        fontSize: 24,
+      }
     })
   },
   Settings: {
