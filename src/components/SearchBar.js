@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
         flexDirection:'row',
         width:'100%',
         marginBottom:20,
-        marginTop:10,
+        marginTop:35,
     },
     searchBar: {
         borderRadius: 30,
