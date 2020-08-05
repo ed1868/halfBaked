@@ -10,6 +10,7 @@ class OrderHistory extends React.Component {
         title: 'Order History',
         header: {
             visible: true
+
         },
     };
 
@@ -30,6 +31,7 @@ class OrderHistory extends React.Component {
 
 const styles = StyleSheet.create({
     orderHistoryPageWrapper: {
+        marginTop:40,
         padding: 20,
         backgroundColor: 'white',
         paddingBottom: 20,
@@ -37,13 +39,14 @@ const styles = StyleSheet.create({
     },
     orderHeader: {
         fontSize: 24,
-        fontFamily: 'Lobster-Regular',
-        color: colors.primary
+        // fontFamily: 'Lobster-Regular',
+        fontFamily: 'OpenSans-Regular',
+        color: colors.secondary
     },
     orderSubHeader: {
         fontFamily: 'OpenSans-Regular',
         fontSize: 14,
-        color: colors.subHeading,
+        color: colors.secondary,
         marginBottom: 10
     }
 })

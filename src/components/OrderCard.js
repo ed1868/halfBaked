@@ -28,7 +28,7 @@ const OrderCard = ({ orderDetail }) => {
                     REORDER
                 </Button>
                 <Button mode="outlined"
-                    theme={{ colors: { primary: colors.heading } }}
+                    theme={{ colors: { primary: colors.secondary } }}
                     onPress={() => console.log("")}>
                     RATE MEAL
                 </Button>
@@ -52,7 +52,9 @@ const styles = StyleSheet.create({
     orderNum:{
         fontSize:12,
         fontFamily:'OpenSans-Light',
-        marginBottom:5
+        marginBottom:5,
+        color: colors.secondary,
+        fontWeight:'bold'
     },
     orderDescription: {
         marginBottom: 5,
