@@ -60,6 +60,7 @@ const styles = StyleSheet.create({
     },
     menuText: {
         fontSize: 20,
+        color: colors.secondary
     }
 });
 export default Settings;

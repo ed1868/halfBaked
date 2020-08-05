@@ -106,7 +106,7 @@ const AccountStack = createStackNavigator({
     })
   },
   Settings: {
-    screen: Settings
+    screen: Settings,
   }
 }, {
   defaultNavigationOptions: ({ navigation }) => ({
@@ -117,6 +117,7 @@ const AccountStack = createStackNavigator({
       color: 'white',
       fontSize: 24,
       minWidth: 200,
+      textAlign:'center'
       
     },
     headerTintColor: 'white'
