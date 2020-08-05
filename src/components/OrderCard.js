@@ -24,13 +24,13 @@ const OrderCard = ({ orderDetail }) => {
                 <Button mode="contained"
                     dark={true}
                     theme={{ colors: { primary: colors.primary } }}
-                    onPress={() => console.log("")}>
+                    onPress={() => console.log("REMEMBER TO DO LOGIC FOR RE-ORDER")}>
                     REORDER
                 </Button>
                 <Button mode="outlined"
                     theme={{ colors: { primary: colors.secondary } }}
-                    onPress={() => console.log("")}>
-                    RATE MEAL
+                    onPress={() => console.log("REMEMBER TO DO LOGIC FOR ORDER RATING")}>
+                    RATE ORDER
                 </Button>
             </View>
         </Surface>
