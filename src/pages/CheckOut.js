@@ -17,6 +17,9 @@ class CheckOut extends React.Component {
     render() {
         const { state,navigate } = this.props.navigation;
 
+        console.log(`-------Object key: ${Object.keys(this.state)} --- Object Value : ${Object.values(this.state)}`)
+
+
         return (
             <View style={evoBlankContainer}>
                 <Text style={styles.priceLbl}>Total Price</Text>
@@ -60,7 +63,7 @@ class CheckOut extends React.Component {
                         <Text>Save card for future payments</Text>
                         <Switch
                             value={this.state.saveCard}
-                            color={colors.success}
+                            color={colors.primary}
                             style={{ transform: [{ scaleX: 1.2 }, { scaleY: 1.2 }] }}
                             onValueChange={() => {
                                 this.setState({ saveCard: !this.state.saveCard });
@@ -70,8 +73,8 @@ class CheckOut extends React.Component {
                     </View>
                 </View>
                 <Button mode="contained"
-                    dark={true}
-                    theme={{ colors: { primary: colors.success } }}
+                    dark={false}
+                    theme={{ colors: { primary: colors.primary } }}
                     style={evoDefaultBtn}
                     onPress={() => navigate('OrderSucessful')}>
                     CHECKOUT
