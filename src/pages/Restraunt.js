@@ -96,7 +96,7 @@ class Restraunt extends React.Component {
     }
 
     render() {
-        console.log("-----PINGa-----", this.state.storeInfo)
+    
 
 const payload =  this.state.storeInfo.titleInfo
         const { navigate } = this.props.navigation;

@@ -14,9 +14,6 @@ class RestrauntMenuItem extends React.Component {
 
     componentDidMount(){
 
-console.log('ahhhhhhh',this.props)
-        
-
     
         AsyncStorage.getAllKeys().then(
             response => {

@@ -1,7 +1,8 @@
 const dispesaryMenuItems = [
     {
         id:1,
-        image:require('./../assets/menu/momos.jpg'),
+        image:require('./../assets/featuredWeedItems/hazy.jpg'),
+        // image:require('./../assets/menu/jazu.jpg'),
         title:'Purple Haze',
         category:'Flower',
         type:'Indica',
@@ -9,7 +10,8 @@ const dispesaryMenuItems = [
     },
     {
         id:2,
-        image:require('./../assets/menu/chineseSamosa.jpg'),
+        // image:require('./../assets/menu/chineseSamosa.jpg'),
+        image:require('./../assets/featuredWeedItems/purpleHaze.jpg'),
         title:'Sour Diesel',
         category:'Flower',
         type:'Hybrid',
@@ -17,7 +19,8 @@ const dispesaryMenuItems = [
     },
     {
         id:3,
-        image:require('./../assets/menu/GuaBao.jpg'),
+        // image:require('./../assets/menu/GuaBao.jpg'),
+        image:require('./../assets/featuredWeedItems/sourD.jpg'),
         title:'Le Gummies',
         category: 'Edibles',
         type:'Sativa',
@@ -25,7 +28,8 @@ const dispesaryMenuItems = [
     },
     {
         id:4,
-        image:require('./../assets/menu/springrolls.jpg'),
+        // image:require('./../assets/menu/springrolls.jpg'),
+        image:require('./../assets/featuredWeedItems/fiifth.png'),
         title:'Foxes Dab',
         category:'Extracts',
         type:"Sativa",
@@ -33,7 +37,8 @@ const dispesaryMenuItems = [
     },
     {
         id:5,
-        image:require('./../assets/menu/ChickenFriedRice.jpg'),
+        image:require('./../assets/featuredWeedItems/second.png'),
+        // image:require('./../assets/menu/ChickenFriedRice.jpg'),
         title:'Lagunita CBD',
         category:'CBD/Drinks',
         type:"Hybrid",
@@ -41,7 +46,8 @@ const dispesaryMenuItems = [
     },
     {
         id:6,
-        image:require('./../assets/menu/boiledShrimp.jpg'),
+        image:require('./../assets/featuredWeedItems/third.png'),
+        // image:require('./../assets/menu/boiledShrimp.jpg'),
         title:'GrandDaddy Purp',
         category:'Flower',
         type:'Indica',
@@ -49,7 +55,8 @@ const dispesaryMenuItems = [
     },
     {
         id:7,
-        image:require('./../assets/menu/coconutShrimp.jpg'),
+        image:require('./../assets/featuredWeedItems/fourth.png'),
+        // image:require('./../assets/menu/coconutShrimp.jpg'),
         title:'Honey Oil Cartrage',
         category:'Extract',
         type:'Sativa',
@@ -57,7 +64,8 @@ const dispesaryMenuItems = [
     },
     {
         id:8,
-        image:require('./../assets/menu/hakkaNoodles.jpg'),
+        image:require('./../assets/featuredWeedItems/purpleHaze.jpg'),
+        // image:require('./../assets/menu/hakkaNoodles.jpg'),
         title:'Lemonchello',
         category:'Extract',
         type:'Hybrid',
@@ -65,7 +73,8 @@ const dispesaryMenuItems = [
     },
     {
         id:9,
-        image:require('./../assets/menu/meatballs.jpg'),
+        image:require('./../assets/featuredWeedItems/hazy.jpg'),
+        // image:require('./../assets/menu/meatballs.jpg'),
         title:'Strawberry Frost',
         category:'Flower',
         type:'Sativa',
@@ -73,7 +82,8 @@ const dispesaryMenuItems = [
     },
     {
         id:10,
-        image:require('./../assets/menu/friedFish.jpg'),
+        image:require('./../assets/featuredWeedItems/fiifth.png'),
+        // image:require('./../assets/menu/friedFish.jpg'),
         title:'Blueberry Kush',
         category:'Flower',
         type:'Indica',
@@ -81,7 +91,8 @@ const dispesaryMenuItems = [
     },
     {
         id:11,
-        image:require('./../assets/menu/chickenRolls.jpg'),
+        image:require('./../assets/featuredWeedItems/fourth.png'),
+        // image:require('./../assets/menu/chickenRolls.jpg'),
         title:'Pineapple Express',
         category:'Flower',
         type:'Sativa',
@@ -89,7 +100,8 @@ const dispesaryMenuItems = [
     },
     {
         id:12,
-        image:require('./../assets/menu/brownie.jpg'),
+        image:require('./../assets/featuredWeedItems/fourth.png'),
+        // image:require('./../assets/menu/brownie.jpg'),
         title:'Brownie',
         category:'Edibles',
         type:'Indica',
@@ -97,7 +109,8 @@ const dispesaryMenuItems = [
     },
     {
         id:13,
-        image:require('./../assets/menu/cheeseCake.jpg'),
+        image:require('./../assets/featuredWeedItems/hazy.jpg'),
+        // image:require('./../assets/menu/cheeseCake.jpg'),
         title:'Cheese Cake',
         category:'Edibles',
         type:'Sativa',
@@ -105,7 +118,8 @@ const dispesaryMenuItems = [
     },
     {
         id:14,
-        image:require('./../assets/menu/donuts.jpg'),
+        image:require('./../assets/featuredWeedItems/purpleHaze.jpg'),
+        // image:require('./../assets/menu/donuts.jpg'),
         title:'Homer Donuts',
         category:'Edibles',
         type:'Indica',
@@ -113,7 +127,8 @@ const dispesaryMenuItems = [
     },
     {
         id:15,
-        image:require('./../assets/menu/pancakes.jpg'),
+        image:require('./../assets/featuredWeedItems/sourD.jpg'),
+        // image:require('./../assets/menu/pancakes.jpg'),
         title:'Space Cakes',
         category:'Flower',
         type:'Indica',
@@ -121,7 +136,8 @@ const dispesaryMenuItems = [
     },
     {
         id:16,
-        image:require('./../assets/menu/cookies.jpg'),
+        image:require('./../assets/featuredWeedItems/fourth.png'),
+        // image:require('./../assets/menu/cookies.jpg'),
         title:'Cookies',
         category:'Edibles',
         type:'Sativa',
