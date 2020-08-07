@@ -11,12 +11,16 @@ class ProductCarousel extends React.Component {
     handleProductSelection = () => {
         // TODO - Make SELECTED PRODUCT LOGIC
         console.log("----------HANDLING SELECTED PRODUCT SELECTION ---------");
-        const { navigate } = this.props.navigation;
-        navigate("Home");
+        alert('AI Nomads needs to code the logic for filter by type of product');
+    
+        // const { navigate } = this.props.gps.navigation
+        // navigate("Login");
       };
 
 
     render() {
+          
+       
         return (
             <React.Fragment>
                 <Text style={styles.cuisineHeader}>Select by Products</Text>

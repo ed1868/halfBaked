@@ -34,7 +34,7 @@ class Home extends React.Component {
                 <SearchBar />
                 <OfferCardCarousel />
                 {/* TO DO - MAKE ICONS FOR PRODUCT CAROUSEL */}
-                <ProductCarousel />
+                <ProductCarousel gps={this.props} />
                 <View>
                     <Text style={styles.stdHeading}>Dispensaries Near You</Text>
                     {/* TO DO - MAKE LOGIC TO GET USER LOCATION AND GET THE NEAREST DISPESARIES */}
